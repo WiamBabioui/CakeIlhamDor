@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #fff8f3;
+    color: #221a0f;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  html[dir='rtl'] body { font-family: 'Noto Naskh Arabic', serif; }
+}
+
+@layer utilities {
+  .font-ar { font-family: 'Noto Naskh Arabic', serif; }
+  .gold-gradient { background: linear-gradient(135deg, #735c00 0%, #d4af37 100%); }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #fff8f3; }
+  ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 9999px; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.animate-fadeInUp { animation: fadeInUp 0.7s ease-out both; }
+.animate-fadeIn   { animation: fadeIn  0.5s ease-out both; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.img-zoom-wrap { overflow: hidden; }
+.img-zoom-wrap img { transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+.img-zoom-wrap:hover img { transform: scale(1.1); }
+.pb-nav { padding-bottom: 72px; }
+@media (min-width: 768px) { .pb-nav { padding-bottom: 0; } }

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Nos Travaux",
+    "cakes": "Voir les Cakes",
+    "gateaux": "Voir les Gâteaux",
+    "contact": "Contact"
+  },
+  "home": {
+    "badge": "Pâtisserie Artisanale · Depuis 2018",
+    "hero_title_1": "L'Art du Sucré",
+    "hero_title_2": "à l'état pur",
+    "hero_sub": "Chaque création est façonnée à la main avec passion — des cakes délicats aux gâteaux d'exception.",
+    "cakes_title": "Nos Cakes",
+    "cakes_sub": "Moelleux, colorés et sublimés",
+    "cakes_see_all": "Voir tous les cakes",
+    "gateaux_title": "Nos Gâteaux",
+    "gateaux_sub": "La tradition marocaine revisitée",
+    "gateaux_see_all": "Voir tous les gâteaux",
+    "contact_title": "Nous Contacter",
+    "contact_sub": "Passez votre commande ou posez-nous vos questions"
+  },
+  "product": {
+    "order_btn": "Commander sur WhatsApp",
+    "order_msg": "Bonjour, je voudrais commander : ",
+    "back_cakes": "← Retour aux cakes",
+    "back_gateaux": "← Retour aux gâteaux",
+    "price": "Prix"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "sub": "Nous répondons avec plaisir pour toute commande ou question",
+    "whatsapp": "WhatsApp",
+    "whatsapp_sub": "Commandez facilement",
+    "phone": "Téléphone",
+    "phone_sub": "Appelez-nous",
+    "facebook": "Facebook",
+    "facebook_sub": "Suivez notre page",
+    "instagram": "Instagram",
+    "instagram_sub": "Nos créations en photos"
+  },
+  "cakes_page": {
+    "title": "Nos Cakes",
+    "sub": "Découvrez notre collection de cakes artisanaux"
+  },
+  "gateaux_page": {
+    "title": "Nos Gâteaux",
+    "sub": "La douceur marocaine dans toute sa splendeur"
+  }
+}
