@@ -6,7 +6,7 @@ const IMG_HERO    = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBaW83Vq
 const IMG_MOROCCAN_1 = 'https://lh3.googleusercontent.com/aida-public/AB6AXuD47JodRl7LIN8YOah94M1C4CfmSNTcF0QJ8SAGyhd50Pg3wKiTU1QDa-makJCeCzUJ_GfAwmUStc8Y16Agrd8mc9IgUnE3qz2t86ezoToY9cJ7aRB4MctjkM7kGbGab2cU_VIoKLx58EX4NefRI1l-VhHH6jjPfyd-a1INtKdgM9HAoS1DFWNwRLVwe3iXaV9YvfTQYsE7r0W75UuOnKJQcAeX9bkerRb-mizkd3OnpXQzKbvb1baRgme1xLd7AjAaEKRX5zpwU6g'
 const IMG_MOROCCAN_2 = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCsdHVjWXQQ_B8uzqc4LbbQ8HuJVxA72J_ctC8MvFGBWioVO__r_0Wrhb31uEkUFw7wpNO1jMEpxbAa_lhyIM9nwqfR_fILvwP5GOxdFBvAVNM9hwKLDZ6sd36pEO_mgFMtxnfSDYq6t9j0RuAu2F1PLhW1VphuUSrq0-7QTXs1tcREnPy5na8s6GxHtAqqzUdTQVQ4sFFDKdUoyTau8lxUsJUD9SnfioGe_WMD9BKXrmA3rNgH23lgJpvoRJi5By4DF6sL6pDA6p8'
 
-const WHATSAPP_NUMBER = '212600000000'
+const WHATSAPP_NUMBER = '212673362925'
 
 export default function Gateaux({ lang }) {
   const isRTL = lang === 'ar'
@@ -135,8 +135,7 @@ export default function Gateaux({ lang }) {
                     className="flex items-center gap-2 text-white font-label text-sm uppercase tracking-widest px-6 py-3 rounded-full hover:-translate-y-1 transition-all"
                     style={{ background: 'linear-gradient(135deg, #735c00 0%, #d4af37 100%)' }}
                   >
-                    <span className="material-symbols-outlined text-sm">chat</span>
-                    {isRTL ? 'اطلبي الآن' : 'Commander'}
+                    {isRTL ? 'اطلبوا الآن' : 'Commander'}
                   </button>
                 </div>
               </Link>
@@ -170,8 +169,7 @@ export default function Gateaux({ lang }) {
                     className="flex items-center gap-2 text-white font-label text-sm uppercase tracking-widest px-6 py-3 rounded-full hover:-translate-y-1 transition-all"
                     style={{ background: 'linear-gradient(135deg, #735c00 0%, #d4af37 100%)' }}
                   >
-                    <span className="material-symbols-outlined text-sm">chat</span>
-                    {isRTL ? 'اطلبي الآن' : 'Commander'}
+                    {isRTL ? 'اطلبوا الآن' : 'Commander'}
                   </button>
                 </div>
               </Link>
@@ -208,8 +206,7 @@ export default function Gateaux({ lang }) {
                         className="flex items-center gap-2 text-white font-label text-xs uppercase tracking-widest px-5 py-2.5 rounded-full hover:-translate-y-1 transition-all"
                         style={{ background: 'linear-gradient(135deg, #735c00 0%, #d4af37 100%)' }}
                       >
-                        <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>chat</span>
-                        {isRTL ? 'اطلبي' : 'Commander'}
+                        {isRTL ? 'اطلبوا' : 'Commander'}
                       </button>
                     </div>
                   </Link>

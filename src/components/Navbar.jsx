@@ -65,12 +65,13 @@ export default function Navbar({ lang, setLang }) {
     <>
       <style>{NAV_STYLE}</style>
 
-      {/* ── MOBILE TOP: logo gauche | globe droit (toujours, peu importe la langue) ── */}
+      {/* ── MOBILE TOP: logo gauche | globe droit — toujours, peu importe la langue ── */}
       <nav className="nav-mobile-top" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
         backgroundColor: '#fff8f3', borderBottom: '1px solid #efe0cd',
         boxShadow: '0 1px 6px rgba(115,92,0,0.07)', height: '56px',
         alignItems: 'center', justifyContent: 'space-between', padding: '0 16px',
+        direction: 'ltr',
       }}>
         {/* Logo toujours à gauche */}
         <LogoBlock />

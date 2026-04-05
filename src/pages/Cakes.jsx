@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { cakes } from '../data/cakes'
 
-const WHATSAPP_NUMBER = '212600000000'
+const WHATSAPP_NUMBER = '212673362925'
 
 export default function Cakes({ lang }) {
   const isRTL = lang === 'ar'
@@ -116,7 +116,7 @@ export default function Cakes({ lang }) {
                     onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
                     onMouseLeave={e => e.currentTarget.style.opacity = '1'}
                   >
-                    {isRTL ? 'اطلب الآن' : 'Commander'}
+                    {isRTL ? 'اطلبوا الآن' : 'Commander'}
                   </button>
                 </div>
               </div>

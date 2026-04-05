@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next'
 // ── CONTACT CONFIG ─────────────────────────────────────────────
 // Remplacez par vos vraies informations
 const CONTACT = {
-  whatsapp:  'https://wa.me/212600000000',
-  phone:     '+212 6 00 00 00 00',
-  phoneTel:  'tel:+212600000000',
+  whatsapp:  'https://wa.me/212673362925',
+  phone:     '+212 673-362925',
+  phoneTel:  'tel:+212673362925',
   facebook:  'https://facebook.com/votre-page',
   instagram: 'https://instagram.com/votre-page',
 }

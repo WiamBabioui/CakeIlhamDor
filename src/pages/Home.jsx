@@ -5,9 +5,9 @@ import { gateaux } from '../data/gateaux'
 
 // ── CONTACT CONFIG — remplacez par vos vraies infos ──────────
 const CONTACT = {
-  whatsapp:  'https://wa.me/212600000000',
-  phone:     'tel:+212600000000',
-  phoneNum:  '+212 6 00 00 00 00',
+  whatsapp:  'https://wa.me/212673362925',
+  phone:     'tel:+212673362925',
+  phoneNum:  '+212 673-362925',
   facebook:  'https://facebook.com/votre-page',
   instagram: 'https://instagram.com/votre-page',
 }
@@ -233,7 +233,7 @@ export default function Home({ lang }) {
           </h3>
           <p className={`text-on-surface-variant mb-12 text-lg ${isRTL ? 'font-ar' : ''}`}>
             {isRTL
-              ? 'تواصلي معنا لفعالياتكم الخاصة، حفلات الزفاف والمناسبات.'
+              ? 'تواصلوا معنا لفعالياتكم الخاصة، حفلات الزفاف والمناسبات.'
               : 'Contactez-nous pour vos événements privés, mariages et réceptions.'
             }
           </p>
@@ -255,7 +255,7 @@ export default function Home({ lang }) {
                   {isRTL ? 'واتساب' : 'WhatsApp'}
                 </p>
                 <p className={`text-sm text-on-surface-variant ${isRTL ? 'font-ar' : ''}`}>
-                  {isRTL ? 'اطلبي بسهولة' : 'Commandez facilement'}
+                  {isRTL ? 'اطلبوا بسهولة' : 'Commandez facilement'}
                 </p>
               </div>
             </a>
@@ -319,31 +319,10 @@ export default function Home({ lang }) {
       </section>
 
       {/* ══ FOOTER ════════════════════════════════════════════ */}
-      <footer className="bg-surface-container-low w-full rounded-t-[2rem]">
-        <div className="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 w-full max-w-7xl mx-auto">
-          <div className={isRTL ? 'text-center md:text-right' : 'text-center md:text-left'}>
-            <span className="font-headline text-lg font-semibold text-primary">Cake Ilham D'or</span>
-            <p className="font-body text-sm tracking-wide text-stone-500 mt-2">
-              © 2024 Cake Ilham D'or. Artisanal Excellence.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-8">
-            {[
-              { to: '/',        fr: 'Accueil',   ar: 'الرئيسية' },
-              { to: '/cakes',   fr: 'Cakes',     ar: 'الكيك' },
-              { to: '/gateaux', fr: 'Gâteaux',   ar: 'الحلويات' },
-              { to: '/contact', fr: 'Contact',   ar: 'تواصل' },
-            ].map((l, i) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                className={`font-body text-sm tracking-wide transition-colors hover:text-primary ${i === 0 ? 'text-primary font-bold' : 'text-stone-500'} ${isRTL ? 'font-ar' : ''}`}
-              >
-                {isRTL ? l.ar : l.fr}
-              </Link>
-            ))}
-          </div>
-        </div>
+      <footer style={{ background: '#fff2e2', padding: '24px 40px', textAlign: 'center' }}>
+        <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '13px', color: '#9ca3af' }}>
+          © 2024 Cake Ilham D'or. Artisanal Excellence.
+        </p>
       </footer>
     </main>
   )
