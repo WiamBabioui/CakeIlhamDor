@@ -1,131 +1,56 @@
-// ─────────────────────────────────────────────────────────────
-//  GÂTEAUX MAROCAINS — Ajoutez vos produits ici
-//
-//  Pour chaque gâteau :
-//    1. Mettez la photo dans :  src/assets/gateaux/
-//    2. Remplissez les champs ci-dessous
-// ─────────────────────────────────────────────────────────────
+// src/data/gateaux.js
+// Photos dans :
+//   src/assets/gateaux/marocain/
+//   src/assets/gateaux/macarons/
 
-export const gateaux = [
-  {
-    id: 'chebakia',
-    slug: 'chebakia',
-    // 📸 Mettez votre photo dans src/assets/gateaux/
-    image: null, // ex: '/src/assets/gateaux/chebakia.jpg'
-    emoji: '🍯',
-    name: {
-      fr: 'Chebakia au Miel',
-      ar: 'شباكية بالعسل',
-    },
-    shortDesc: {
-      fr: 'Croustillante, parfumée à la fleur d\'oranger',
-      ar: 'مقرمشة بعطر ماء الزهر',
-    },
-    description: {
-      fr: 'La chebakia traditionnelle façonnée entièrement à la main, frite dans une huile pure, puis trempée dans du miel d\'acacia chaud et saupoudrée de sésame doré. Parfumée à l\'eau de fleur d\'oranger et à la cannelle. Préparée selon la recette familiale transmise de génération en génération.',
-      ar: 'الشباكية التقليدية المصنوعة كلياً يدوياً، مقلية بزيت نقي ثم مغمورة في عسل الأقاقيا الساخن ومرشوشة بالسمسم الذهبي. معطرة بماء الزهر والقرفة. محضّرة وفق الوصفة العائلية المتوارثة جيلاً بعد جيل.',
-    },
-    prix: '120 DH / 12 pièces',
-    category: 'gateau',
-  },
-  {
-    id: 'kaab-ghzal',
-    slug: 'kaab-ghzal',
-    image: null,
-    emoji: '🌙',
-    name: {
-      fr: 'Kaab el Ghzal',
-      ar: 'كعب الغزال',
-    },
-    shortDesc: {
-      fr: 'Amande & fleur d\'oranger, la classique',
-      ar: 'اللوز وماء الزهر، الكلاسيكية الخالدة',
-    },
-    description: {
-      fr: 'La corne de gazelle, symbole de la pâtisserie marocaine raffinée. Une pâte fine et dorée enveloppe une farce généreuse d\'amandes moulues, parfumée à l\'eau de fleur d\'oranger, au mastic et à la cannelle. Chaque pièce est modelée à la main pour obtenir la forme caractéristique en croissant.',
-      ar: 'كعب الغزال، رمز الحلوى المغربية الراقية. عجينة رفيعة وذهبية تلف حشوة سخية من اللوز المطحون المعطّر بماء الزهر والمستكة والقرفة. كل قطعة تُشكّل يدوياً للحصول على الشكل الهلالي المميز.',
-    },
-    prix: '150 DH / 12 pièces',
-    category: 'gateau',
-  },
-  {
-    id: 'briouate-amande',
-    slug: 'briouate-amande',
-    image: null,
-    emoji: '✨',
-    name: {
-      fr: 'Briouate à l\'Amande',
-      ar: 'بريوات اللوز',
-    },
-    shortDesc: {
-      fr: 'Feuilleté doré, farce d\'amande et miel',
-      ar: 'ورقي ذهبي بحشوة اللوز والعسل',
-    },
-    description: {
-      fr: 'Des briouates croustillantes en pâte filo, fourrées d\'une pâte d\'amandes parfumée au miel et à la cannelle, puis frites à la perfection. Leur feuilleté doré et leur farce généreuse en font une douceur irrésistible pour les grandes occasions.',
-      ar: 'بريوات مقرمشة من عجينة الفيلو، محشوة بمعجون اللوز المعطّر بالعسل والقرفة، ثم مقلية إلى الكمال. قشرتها الذهبية المقرمشة وحشوتها السخية تجعلها حلوى لا تقاوم للمناسبات الكبرى.',
-    },
-    prix: '100 DH / 12 pièces',
-    category: 'gateau',
-  },
-  {
-    id: 'sellou',
-    slug: 'sellou',
-    image: null,
-    emoji: '🌾',
-    name: {
-      fr: 'Sellou (Sfouf)',
-      ar: 'سلو (صفوف)',
-    },
-    shortDesc: {
-      fr: 'Énergisant, amande & sésame grillés',
-      ar: 'مقوٍّ بالأمند والسمسم المحمّص',
-    },
-    description: {
-      fr: 'Le sellou, aussi appelé sfouf, est une spécialité marocaine énergisante composée de farine grillée, de sésame, d\'amandes et de miel. Parfumé à l\'anis et à la cannelle, il est traditionnellement préparé pour le Ramadan et les nouvelles mamans. Notre recette artisanale respecte scrupuleusement la tradition.',
-      ar: 'السلو، المعروف أيضاً بالصفوف، تخصص مغربي مقوٍّ مكون من الدقيق المحمّص والسمسم واللوز والعسل. معطّر بالينسون والقرفة، يُحضَّر تقليدياً لشهر رمضان والأمهات الجدد.',
-    },
-    prix: '80 DH / 250g',
-    category: 'gateau',
-  },
-  {
-    id: 'makrout',
-    slug: 'makrout',
-    image: null,
-    emoji: '🍂',
-    name: {
-      fr: 'Makrout aux Dattes',
-      ar: 'مقروط بالتمر',
-    },
-    shortDesc: {
-      fr: 'Semoule & pâte de dattes, frit au miel',
-      ar: 'سميد بمعجون التمر، مقلي بالعسل',
-    },
-    description: {
-      fr: 'Le makrout, un incontournable de la pâtisserie orientale. Des losanges de semoule fine farcis d\'une pâte de dattes Medjool parfumée à la cannelle et à l\'eau de fleur d\'oranger, frits puis enrobés de miel chaud. Un délice fondant qui fond littéralement en bouche.',
-      ar: 'المقروط، لا غنى عنه في الحلوى الشرقية. معينات من السميد الناعم محشوة بمعجون تمر المجهول المعطّر بالقرفة وماء الزهر، مقلية ثم مغلّفة بالعسل الساخن. شهادة ذائبة في الفم حرفياً.',
-    },
-    prix: '90 DH / 12 pièces',
-    category: 'gateau',
-  },
-  {
-    id: 'ghribia',
-    slug: 'ghribia',
-    image: null,
-    emoji: '⭐',
-    name: {
-      fr: 'Ghriba aux Noix',
-      ar: 'غريبة بالجوز',
-    },
-    shortDesc: {
-      fr: 'Sablé fondant, croquant de noix',
-      ar: 'سابلي ذائب بقرمشة الجوز',
-    },
-    description: {
-      fr: 'Les ghriba sont de délicieux sablés marocains qui fondent en bouche. Notre version aux noix est parfumée à la cannelle et à la vanille, avec un cœur légèrement humide entouré d\'une coque craquelée dorée. À savourer avec un thé à la menthe.',
-      ar: 'الغريبة حلوى مغربية لذيذة تذوب في الفم. نسختنا بالجوز معطّرة بالقرفة والفانيليا، بمركز رطب قليلاً محاط بقشرة متشققة ذهبية. يُستمتع بها مع الشاي بالنعناع.',
-    },
-    prix: '70 DH / 12 pièces',
-    category: 'gateau',
-  },
+// ── Pâtisseries Marocaines ────────────────────────────────────
+import amond        from '../assets/gateaux/marocain/amond.jpeg'
+import concasse     from '../assets/gateaux/marocain/concasse.jpeg'
+import fakas        from '../assets/gateaux/marocain/fakas.jpeg'
+import financier    from '../assets/gateaux/marocain/financier.jpeg'
+import fleur        from '../assets/gateaux/marocain/fleur.jpeg'
+import fruit        from '../assets/gateaux/marocain/fruit.jpeg'
+import gourmandises from '../assets/gateaux/marocain/gourmandises.jpeg'
+import kaeba        from '../assets/gateaux/marocain/kaeba.jpeg'
+import maalka       from '../assets/gateaux/marocain/maalka.jpeg'
+import nouga        from '../assets/gateaux/marocain/nouga.jpeg'
+import plateau      from '../assets/gateaux/marocain/plateau.jpeg'
+
+// ── Macarons ──────────────────────────────────────────────────
+import macBlueberry  from '../assets/gateaux/macarons/Blueberry.jpg'
+import macChocolat   from '../assets/gateaux/macarons/chocolat.jpg'
+import macCitron     from '../assets/gateaux/macarons/citron.jpg'
+import macCoucou     from '../assets/gateaux/macarons/coucou.jpg'
+import macFraise     from '../assets/gateaux/macarons/fraise.jpg'
+import macFramboise  from '../assets/gateaux/macarons/framboise.jpg'
+import macPistache   from '../assets/gateaux/macarons/pistache.jpg'
+import macVanille    from '../assets/gateaux/macarons/vanille.jpg'
+
+// ─────────────────────────────────────────────────────────────
+export const gateauxMarocains = [
+  { id: 'maalka',       slug: 'maalka',       image: maalka,       category: 'gateau', name: { fr: 'Maâlka',                     ar: 'معلكة' },                  shortDesc: { fr: 'Ghriyba fondante aux cacahuète',               ar: 'غريبة معلكة بالكاوكاو' }},
+  { id: 'concasse',     slug: 'concasse',     image: concasse,     category: 'gateau', name: { fr: 'Nougat aux amandes concassées',                    ar: 'نوغا باللوز كونكاسيه' },               shortDesc: { fr: 'Amandes concassées et miel doré',               ar: 'لوز وعسل ذهبي' } },
+  { id: 'fakas',        slug: 'fakas',        image: fakas,        category: 'gateau', name: { fr: 'Fakkas',                      ar: 'فقاس' },                   shortDesc: { fr: 'Fakkas croquants aux noix',         ar: 'فقاص مقرمش بالجوز' }},
+  { id: 'financier',    slug: 'financier',    image: financier,    category: 'gateau', name: { fr: 'Financier préstige',                   ar: 'فينانسيي بريستيج' },               shortDesc: { fr: 'Aux amandes concassées et éffilées',         ar: 'باللوز كوكسيه و ايفيلي' }},
+  { id: 'fleur',        slug: 'fleur',        image: fleur,        category: 'gateau', name: { fr: 'Gâteau Fleur Aux Amandes ',                ar: 'حلوى الوردة باللوز' },            shortDesc: { fr: 'Délicat, parfumé à la fleur d\'oranger',     ar:' بعطر ماء الزهر' } },
+  { id: 'fruit',        slug: 'fruit',        image: fruit,        category: 'gateau', name: { fr: 'Gâteau aux Fruits',           ar: 'حلوى الفواكه' },           shortDesc: { fr: 'Fruits confits et amandes',                  ar: 'فواكه مسكرة ولوز' } },
+  { id: 'gourmandises', slug: 'gourmandises', image: gourmandises, category: 'gateau', name: { fr: 'Plateau Gourmandises',        ar: 'حلويات متنوعة' },         shortDesc: { fr: 'Assortiment de douceurs marocaines',        ar: 'تشكيلة من الحلويات المغربية' }},
+  { id: 'kaeba',        slug: 'kaeba',        image: kaeba,        category: 'gateau', name: { fr: 'Kaâb el Ghzal',              ar: 'كعب الغزال' },             shortDesc: { fr: 'Corne de gazelle, amande & fleur d\'oranger', ar: 'لوز وماء الزهر'           }    },
+  { id: 'amond',        slug: 'amond',        image: amond,        category: 'gateau', name: { fr: 'Gâteau aux Amandes',          ar: 'حلوى اللوز' },            shortDesc: { fr: 'Aux amandes grillées',              ar: ' باللوز المحمص' }           },
+  { id: 'nouga',        slug: 'nouga',        image: nouga,        category: 'gateau', name: { fr: 'Nougat Préstige',            ar: 'نوغا بريستيج' },             shortDesc: { fr: 'Fondant miel, chocolat et fruits secs',               ar: 'ذائب بالعسل الشكلاطة والمكسرات' }},
+  { id: 'plateau',      slug: 'plateau',      image: plateau,      category: 'gateau', name: { fr: 'Plateau Marocain',           ar: 'حلويات مغربية' },            shortDesc: { fr: 'Sélection de pâtisseries marocaines',       ar: 'تشكيلة من الحلويات المغربية' } },
 ]
+
+export const macarons = [
+  { id: 'mac-blueberry', slug: 'mac-blueberry', image: macBlueberry, category: 'macaron', name: { fr: 'Macaron Myrtille',   ar: 'ماكارون التوت الأزرق' }, shortDesc: { fr: 'Myrtilles fraîches et ganache veloutée',   ar: 'توت أزرق طازج وغاناش مخملي' }   },
+  { id: 'mac-coucou',    slug: 'mac-coucou',    image: macCoucou,    category: 'macaron', name: { fr: 'Macaron Coucou',     ar: 'ماكارون كوكو' },           shortDesc: { fr: 'Noix de coco et ganache légère',            ar: 'جوز هند وغاناش خفيف' }           },
+  { id: 'mac-citron',    slug: 'mac-citron',    image: macCitron,    category: 'macaron', name: { fr: 'Macaron Citron',     ar: 'ماكارون الليمون' },        shortDesc: { fr: 'Crème de citron rafraîchissante',              ar: 'كريمة الليمون المنعش' } },
+  { id: 'mac-chocolat',  slug: 'mac-chocolat',  image: macChocolat,  category: 'macaron', name: { fr: 'Macaron Chocolat',   ar: 'ماكارون الشوكولاتة' },    shortDesc: { fr: 'Ganache intense au chocolat noir',          ar: 'غاناش كثيف بالشوكولاتة الداكنة' }, },
+  { id: 'mac-fraise',    slug: 'mac-fraise',    image: macFraise,    category: 'macaron', name: { fr: 'Macaron Fraise',     ar: 'ماكارون الفراولة' },       shortDesc: { fr: 'Fraises fraîches et crème légère',          ar: 'فراولة طازجة وكريمة خفيفة' }    },
+  { id: 'mac-pistache',  slug: 'mac-pistache',  image: macPistache,  category: 'macaron', name: { fr: 'Macaron Pistache',   ar: 'ماكارون الفستق' },         shortDesc: { fr: 'Pistache et crème onctueuse',     ar: 'فستق  وكريمة ناعمة' }   },
+  { id: 'mac-framboise', slug: 'mac-framboise', image: macFramboise, category: 'macaron', name: { fr: 'Macaron Framboise',  ar: 'ماكارون التوت' },          shortDesc: { fr: 'Framboise rouge et ganache rose',        ar: 'توت احمر وغاناش وردي' }         },
+  { id: 'mac-vanille',   slug: 'mac-vanille',   image: macVanille,   category: 'macaron', name: { fr: 'Macaron Vanille',    ar: 'ماكارون الفانيليا' },      shortDesc: { fr: 'Vanille, ganache légère',    ar: 'فانيليا ، غاناش خفيف' } },
+]
+
+// Legacy export
+export const gateaux = [...gateauxMarocains]

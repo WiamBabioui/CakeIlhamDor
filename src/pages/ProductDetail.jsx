@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { cakes } from '../data/cakes'
-import { gateaux as gateauxMarocains } from '../data/gateaux'
+import { gateauxMarocains, macarons } from '../data/gateaux'
 import WhatsAppButton from '../components/WhatsAppButton'
 
 const WHATSAPP_NUMBER = '212673362925'
@@ -16,6 +16,7 @@ export default function ProductDetail({ lang, type }) {
     product = cakes.find(p => p.slug === slug)
   } else {
     product = gateauxMarocains.find(p => p.slug === slug)
+    if (!product) product = macarons.find(p => p.slug === slug)
   }
 
   if (!product) {
@@ -190,7 +191,7 @@ export default function ProductDetail({ lang, type }) {
 }
 
 function RelatedProducts({ product, lang, isRTL, isCake, accentColor }) {
-  const allProducts = isCake ? cakes : gateauxMarocains
+  const allProducts = isCake ? cakes : [...gateauxMarocains, ...macarons]
   const others = allProducts.filter(p => p.id !== product.id).slice(0, 4)
   if (!others.length) return null
 

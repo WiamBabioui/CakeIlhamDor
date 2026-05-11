@@ -6,8 +6,8 @@ const CONTACT = {
   whatsapp:  'https://wa.me/212673362925',
   phone:     '+212 673-362925',
   phoneTel:  'tel:+212673362925',
-  facebook:  'https://facebook.com/votre-page',
-  instagram: 'https://instagram.com/votre-page',
+  facebook:  'https://www.facebook.com/share/18TiifHw71/',
+  instagram: 'https://www.instagram.com/cake.ilham.dor?igsh=bTc0a3VwZ2I2OGxq',
 }
 
 export default function Contact({ lang }) {

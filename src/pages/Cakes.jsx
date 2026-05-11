@@ -109,7 +109,7 @@ export default function Cakes({ lang }) {
                 100%
               </span>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '13px', color: '#4d4635' }}>
-                {isRTL ? 'يدوي ومكونات طبيعية.' : 'Artisanal & Ingrédients naturels.'}
+                {isRTL ? 'إبداعات شهية بمكونات مختارة بعناية.' : 'Créations gourmandes aux ingrédients soigneusement sélectionnés.'}
               </p>
             </div>
           </div>

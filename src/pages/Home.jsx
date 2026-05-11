@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import accueilImg from '../assets/accueil.jpeg'
 import { Link } from 'react-router-dom'
 import { cakes } from '../data/cakes'
 import { gateaux } from '../data/gateaux'
@@ -6,14 +7,14 @@ import { gateaux } from '../data/gateaux'
 // ── CONTACT CONFIG — remplacez par vos vraies infos ──────────
 const CONTACT = {
   whatsapp:  'https://wa.me/212673362925',
-  phone:     'tel:+212673362925',
-  phoneNum:  '+212 673-362925',
-  facebook:  'https://facebook.com/votre-page',
-  instagram: 'https://instagram.com/votre-page',
+  phone:     '+212 673-362925',
+  phoneTel:  'tel:+212673362925',
+  facebook:  'https://www.facebook.com/share/18TiifHw71/',
+  instagram: 'https://www.instagram.com/cake.ilham.dor?igsh=bTc0a3VwZ2I2OGxq',
 }
 
 // ── Images hero/bento (remplacez par vos propres images) ─────
-const IMG_HERO    = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMsYijWUXbXPA2k6EBxLXwQMBRXyW9PwOt0eqbVH76r9BgSyBbvu_h9QD-Yyx7UbAEwgZIn8a2Z7F2OFGeoZlJH9cdPE9O6ZVzMQOhbdXp8TmZaY8DEjQkdkDAdBKDZ72N8bAsbef1Gbea9q796sIQcJBbJDNsqLo4tLoxvOi1WtMb9Mw93sjgS07uXPZPOY3L8qlN1N8a6a3jSn4fl0cKXqxV3u1fCDOVIlU6q6TCsZFwstCY5vESiBpk6LqLbzw0jAG0yNwl0V0'
+const IMG_HERO    = accueilImg
 const IMG_BENTO_CAKE   = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBaq6qOjhLAXWhxehC05oF21nYaCC1r7Phbjb7yKldpyZPQoj9nR2VZHjrSWK-m4cqm4uuMRcTTRKq0cGW0WlGHaTz5HXUrspl2oNfAXz6tvyIN6bK314k5d8bXpjp6IWkVsXaRD0MhhAPsWDnqE-EQzLNiIeZqJykWdMsflt7byGKHa27ryD4hC2ViT6D7wfUXL5upyh3btFtvBwWJh2P46yOnMCmFw-BldHECeTTyIehKhr4Yn1KDgJbw2rqq0Ti3mkcH7omXTUg'
 const IMG_BENTO_GATEAU = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDTmDwUEsNe4RPhpJajo7J8jKaXIQArASadHaffaLiGgwnu01mg7L7qEzrsUI2bUUJD7h27daKl2QLaH1pmlo5RuqOuXZDruT-r0_-pldeJ2S-nC8_mrFY7skNHZevtaxQn__lJdWWXxQwcqwRldIZx2pwIjRSp97cwq4bhcrSevP_ZH6NNyrgyhmtrUfSXjSPZFjdLft2SDzOFFD0RUlxWz1MsSQ2T8izPbwU7EJNtUjOVU-ySu6jZ0ApGV5hVWzk2aP5Z0OyrAe0'
 
@@ -127,8 +128,8 @@ export default function Home({ lang }) {
                 </h2>
                 <p className="text-on-surface-variant mb-8">
                   {isRTL
-                    ? 'أصالة نكهات الأطلس: كعب الغزال والعسل وماء الزهر.'
-                    : "L'authenticité des saveurs de l'Atlas : cornes de gazelle, miel et fleur d'oranger."
+                    ? 'إبداعات مغربية بنكهات أصيلة ولمسة عصرية'
+                    : "Créations marocaines aux saveurs authentiques et touche moderne"
                   }
                 </p>
               </div>
@@ -143,7 +144,7 @@ export default function Home({ lang }) {
                 to="/gateaux"
                 className={`mt-8 text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all ${isRTL ? 'flex-row-reverse justify-end' : ''}`}
               >
-                {isRTL ? 'الحرف التقليدية' : "L'artisanat traditionnel"}
+                {isRTL ? 'الحلويات المغربية' : "Les Gâteaux Marocains"}
                 <span className="material-symbols-outlined">
                   {isRTL ? 'arrow_back' : 'arrow_forward'}
                 </span>
@@ -162,7 +163,7 @@ export default function Home({ lang }) {
               {isRTL ? 'توقيعاتنا' : 'Nos Signatures'}
             </h3>
             <p className={`text-on-surface-variant mt-4 text-lg ${isRTL ? 'font-ar' : ''}`}>
-              {isRTL ? 'مختارة بعناية لأذواقكم.' : 'Sélectionnés avec soin pour vos papilles.'}
+              {isRTL ? ' الرفيعةمختارة بعناية لأذواقكم.' : 'Sélectionné avec soin pour vos goûts raffinés.'}
             </p>
           </div>
           <div className="flex gap-4">
@@ -255,7 +256,7 @@ export default function Home({ lang }) {
                   {isRTL ? 'واتساب' : 'WhatsApp'}
                 </p>
                 <p className={`text-sm text-on-surface-variant ${isRTL ? 'font-ar' : ''}`}>
-                  {isRTL ? 'اطلبوا بسهولة' : 'Commandez facilement'}
+                  {isRTL ? 'اطلبي بسهولة' : 'Commandez facilement'}
                 </p>
               </div>
             </a>
